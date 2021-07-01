@@ -1,0 +1,434 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+/* Styles for header*/
+
+header{
+    display: flex;
+    justify-content:space-around;
+    background-color: darkblue;
+    width: 100%;
+    height: 100px;
+    align-items:center;
+    position:fixed;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-top: 0px;
+    top: 0px;
+}
+
+header .mon-menu {
+    position:relative;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    right: 0px;
+    float: left;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.monlogo{
+    position:relative;
+    width:25%;
+    left: 0px;
+    height: 100px;
+}
+.monlogo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.mon-menu li a{
+    display:inline-block;
+    line-height: 100px;
+    text-align: center;
+    margin-right: 25px;
+    color: white;
+}
+.mon-menu li a:hover{
+   border-bottom: 2px solid yellow;
+   background-color:rgba(169, 169, 169, 0.637);
+   color:yellow;
+   transition: all 1s ease;
+   font-style: italic;
+}
+
+/*Styles for the footer*/
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+    bottom: 0px;
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 25px;
+    font-style: italic;
+    color: white;   
+}
+
+.reseau-logo span{
+    display: inline-block;
+    margin: 0px 25px;
+}
+
+.reseau-logo span i{
+    color: white;
+}
+
+.reseau-logo span i:hover{
+    color: yellow;
+}
+.reseau-logo{
+    display: flex;
+    align-items: center;
+ 
+}
+
+/*style for contact.html*/
+
+article{
+  display:flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  top: 101px;
+  height:500px;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+.all-contact {
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("../img/ballon-cadeau.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-size: contain;
+}
+
+.adresse p:first-child {
+    color: maroon;
+    font-size: 35px;
+}
+
+.email p:first-child {
+    color: maroon;
+    font-size: 35px;
+}
+
+.adresse,.email, .phone{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  border-bottom: 2px solid darkblue;
+  margin: 35px auto;
+ 
+}
+.phone p:first-child {
+    color: maroon;
+    font-size: 35px;
+}
+
+.adresse p:nth-child(2) {
+    color: darkblue;
+    font-size: 25px;
+}
+
+.email p:nth-child(2) {
+    color: darkblue;
+    font-size: 25px;
+}
+
+.phone p:nth-child(2) {
+    color: darkblue;
+    font-size: 25px;
+}
+
+
+.newletter h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top:15px;
+}
+
+.newletter {
+    width: 50%;
+    position: relative;
+ 
+}
+
+.newletter form {
+    width:90%;
+    margin: 25px auto;
+    position: relative;
+    height: 400px;
+    background-color: darkblue;
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.newletter form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+.newletter form input {
+    width: 350px;
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+.newletter form input[type="submit"] {
+    width: 300px;
+    height: 45px;
+    color: white;
+    background-color: maroon;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    margin-top: 50px;
+    left: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="text"]:focus {
+    border: 2px solid blue;
+    font-size: 20px;
+}
+input[type="email"]:focus {
+  border: 2px solid blue;
+font-size: 20px;
+}
+
+#send:hover {
+    background-color: darkblue;
+    border: 1px solid white;
+    color: yellow;
+}
+
+.newletter form label {
+    font-size: 25px;
+    color: white;
+}
+.font-bars{
+    display: none;
+}
+/*Styles for media query*/
+
+@media (min-width:500px) and (max-width:768px){
+    
+    
+    .font-bars{
+        color: white;
+        font-size: 35px;
+        top: 10px;
+        position: absolute;
+        right:10px;
+        cursor: pointer;
+        display: block;
+    }
+
+    header{
+        display:flex;
+        justify-content:space-around;
+        background-color: darkblue;
+        width: 100%;
+        height: 70px;
+    }
+    
+    header .mon-menu {
+        position:absolute;
+        display: flex;
+        width:300px;
+        flex-direction: column;
+        align-items: center;
+        right: 0px;
+        top: 70px;
+        background-color:darkblue;
+        height: 600px;
+        box-sizing: border-box;
+        display: none;
+        border-top: 2px solid white;
+    }
+    
+    
+    .monlogo{
+        position: absolute;
+        left: 0px;
+        top: 5px;
+    }
+    .monlogo img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .mon-menu li{
+        display: block;
+        width: 100%;
+        height: 40px;
+        /* margin-bottom: 25px; */
+        margin-top: 50px;
+    }
+    .mon-menu li a{
+        display:block;
+        width: 100%;
+        position: relative;
+        line-height: 50px;
+        text-align: center;
+        border-bottom: 1px solid white;
+        margin:0px;
+        color: white;
+    }
+
+    .mon-menu li a:hover{
+        border-bottom:none;
+        color:yellow;
+        transition: all 1s ease;
+        font-style: italic;
+     }
+   
+
+     article{
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         top:71px;
+     }
+
+     .all-contact{
+         width: 100%;
+     }
+
+     .newletter{
+         width: 100%;
+     }
+
+     .newletter form {
+        width:100%;
+        margin: 25px auto;
+    }
+    
+    .newletter form div {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
+    
+    .newletter form input {
+        width: 90%;
+        position: relative;
+        height: 40px;
+        outline: none;
+        border: 1px solid black;
+    
+    }
+    
+    .newletter form input[type="submit"] {
+        width: 60%;
+        height: 45px;
+        left:0px;
+        display: block;
+        margin: 25px auto;
+        position: relative;
+    }
+
+    .adresse p:first-child {
+        color: maroon;
+        font-size:25px;
+    }
+    
+    .email p:first-child {
+        color: maroon;
+        font-size:25px;
+    }
+    .phone p:first-child {
+        color: maroon;
+        font-size: 25px;
+    }
+
+    .adresse, .email, .phone{
+        width: 90%;
+    }
+
+    .phone p:nth-child(2) {
+        color: darkblue;
+        font-size:20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .newletter form input[type="submit"] {
+        width: 60%;
+        height: 45px;
+        left:0px;
+        display: block;
+        margin: 25px auto;
+        position: relative;
+    }
+
+    .newletter form div {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
+    
+    .newletter form input {
+        width: 90%;
+        position: relative;
+        height: 40px;
+        outline: none;
+        border: 1px solid black;
+    
+    }
+}
+
+@media (min-width:1024px) and (max-width:1388px){
+
+    .newletter form input[type="submit"] {
+        width: 60%;
+        height: 45px;
+        left:0px;
+        display: block;
+        margin: 25px auto;
+        position: relative;
+    }
+
+}
+
+

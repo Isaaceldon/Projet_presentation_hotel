@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonial</title>
+    <link href="../css/testimonial.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <script src="jquery-3.6.0.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="font-bars"><i id="font-bars" class="fas fa-bars"></i></div>
+        <div class="monlogo"><a href="../html/index.html"><img src="../img/logo-hotel.jpg"></a></div>
+      
+      <div>
+          <ul class="mon-menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="../html/reservation.html">Reservation</a></li>
+             <li><a href="../html/testimonial.html">Testimonials</a></li>
+             <li><a href="../html/contact.html">Contact</a></li> 
+         </ul>
+     </div>
+     </header>
+  
+
+     <main>
+                 <div class="testimony">
+
+                    <div class="les-testimony" data-aos="zoom-in-up">
+                        <h1 class="monH1">Mounzer M.</h1>
+                        <h3>Good stay, good services,</h3>
+                        <p>the environment is very pleasant, greenery, lake, swimming pool, spacious room, good quality of food,
+                        staff, pleasant and available</p>
+                    </div>
+
+                    <div class="les-testimony1">
+                        <h1 class="monH1">Mounzer M.</h1>
+                        <h3>Good stay, good services,</h3>
+                        <p>the environment is very pleasant, greenery, lake, swimming pool, spacious room, good quality of food,
+                        staff, pleasant and available</p>
+                    </div>
+
+                 <div class="les-testimony2">
+                        <h1>Percide Amen</h1>
+                        <h3>An excellent stay</h3>
+                        <p>Since the reopening in 2019, I had not had the opportunity to return to Cotonou. The hotel
+                            has been
+                            perfectly renovated and the interior spaces are friendly and tastefully decorated. A large
+                            swimming
+                            pool that allows you to relax between two meetings. The rooms are a good size with a perfectly adapted and contemporary layout. But a hotel is above all a place of life which is animated by its
+                            staff.</p>
+                    </div>
+
+                    <div class="les-testimony3" >
+                        <h1>Codjo Janvier</h1>
+                        <h3>Peaceful stay</h3>
+                        <p>I had a peaceful wedding night Although I am late for breakfast, a solution has been found
+                            for my
+                            husband and I. I would have liked the meal to be included</p>
+                    </div>
+
+                <div class="les-testimony4">
+                        <h1>Moumou Yake.</h1>
+                        <h3>Good stay, good services,</h3>
+                        <p>the environment is very pleasant, greenery, lake, swimming pool, spacious room, good quality of food,
+                        staff, pleasant and available</p>
+                    </div>
+                    </div>
+
+                </div> 
+
+
+            <div class="witness">
+                <div class="profil-witness">
+                    <img src="team-1.jpg"  class="contenu">
+                </div>
+            </div>
+            
+            <ul class="sous">
+                <li><img src="team-1.jpg" onclick="change('team-1.jpg'); changeText1()"></li>
+                <li><img src="team-2.jpg" onclick="change('team-2.jpg'); changeText2()"></li>
+                <li><img src="team-3.jpg" onclick="change('team-3.jpg'); changeText3()"></li>
+                <li><img src="team-4.jpg" onclick="change('team-4.jpg'); changeText4()"></li>
+            </ul>
+            
+
+        </main>
+
+       
+    
+
+    <footer>
+        <p>copyright@2021 All right reserved</p>
+        <div class="reseau-logo">
+            <span><a href=""><i class="fab fa-facebook-f"></i></a></span>
+            <span><a href=""><i class="fab fa-twitter"></i></a></span>
+            <span><a href=""><i class="fab fa-instagram"></i></a></span>
+            <span><a href=""><i class="fab fa-linkedin"></i></a></span>
+        </div>
+     </footer>
+
+     <script type="text/javascript">
+         
+         function change(monimage){
+        document.querySelector('.contenu').src=monimage;
+       
+    }
+
+    function changeText1(){
+        document.querySelector('.les-testimony').innerHTML=document.querySelector('.les-testimony1').innerHTML;
+        
+    }
+
+    function changeText2(){
+        document.querySelector('.les-testimony').innerHTML=document.querySelector('.les-testimony2').innerHTML;
+        
+    }
+
+    function changeText3(){
+        document.querySelector('.les-testimony').innerHTML=document.querySelector('.les-testimony3').innerHTML;
+        
+    }
+
+    function changeText4(){
+        document.querySelector('.les-testimony').innerHTML=document.querySelector('.les-testimony4').innerHTML;
+        
+    }
+   
+
+$('.font-bars').click(function(){
+    $('.mon-menu').toggle();
+});
+
+        AOS.init();
+    
+     </script>
+ </body>
+
+</html>

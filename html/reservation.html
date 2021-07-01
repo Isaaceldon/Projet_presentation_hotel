@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <script src="jquery-3.6.0.js" type="text/javascript"></script>
+    <link href="../css/reservation.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="font-bars"><i id="font-bars" class="fas fa-bars"></i></div>
+        <div class="monlogo"><a href="../html/index.html"><img src="../img/logo-hotel.jpg"></a></div>
+      
+      <div>
+          <ul class="mon-menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="../html/reservation.html">Reservation</a></li>
+             <li><a href="../html/testimonial.html">Testimonials</a></li>
+             <li><a href="../html/contact.html">Contact</a></li> 
+         </ul>
+     </div>
+     </header>
+
+
+    <main>
+
+        <article>
+
+            <h1 class="welcome-sms">Welcome to our room reservation</h1>
+
+            <form method="POST" action="">
+
+                <div class="first-tarif">
+                    <div>
+                        <p><label>Arrival</label></p><input type="date" name="date_arrive">
+                    </div>
+                    <div>
+                        <p><label>Departure</label></p><input type="date" name="date_depart">
+                    </div>
+                </div>
+
+                <h3 class="h3">The hotel offers rooms for up to 2 people with a minimum of 1 adult.</h3>
+
+                <div class="second-tarif">
+                    <div class="selection">
+                        <p><label>Bedrooms)</label></p>
+                        <select name="nbre-room" class="select-place">
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <p><label>Adult (s)</label></p>
+                        <select name="nbre_adult" class="select-place">
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <p><label>Child(ren)</label></p>
+                        <select name="nbre_child" class="select-place">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="rate">
+                    <h1><span class="bord"></span>Special rates<span class="bord"></span></h1>
+            
+                <div class="rate-input">
+                    <p> <label>Loyalty or subscription card<small>16 digit card number</small></label></p>
+                    <input type="text" name="carte">
+                </div>
+                <div class="rate-input">
+                    <p><label>Preferential code</label></p>
+                    <input type="text" name="code">
+                </div>
+                <div class="rate-input">
+                    <p><label>Business travelers with contract<small>Customer code (SC, AS….) </small></label></p>
+                    <input type="text" name="code_client">
+                </div>
+                <div class="rate-input">
+                    <p><label>Access code<small>10 characters </small></label></p>
+                    <input type="text" name="code_acces">
+                </div>
+
+                <button type="submit">See prices</button>
+
+            </div>
+            </form>
+
+            <div class="tarif-description">
+                <h2>IMPORTANT!</h2>
+                <p> * Price from, for one night in accommodation in a standard double room including tax (for 1 or 2
+                    people),excluding additional services, excluding breakfast, excluding tourist tax and taxes
+                    additional to
+                    the tourist tax.</p>
+                <p>
+                    Price of accommodation found on all.accor.com over the past 24 hours, for a stay in this hotel
+                    within the next 8 days. Variable depending on hotel, period and availability. Depending on the
+                    country of the hotel,
+                    these prices may be indicated either excluding taxes, or including VAT only, or all taxes included
+                    (VAT and
+                    tourist tax included).
+                    When the prices are not displayed inclusive of all taxes, the taxes (VAT and / or tourist tax) will
+                    be specified in the following steps of the reservation process. The price is only guaranteed at the
+                    time of
+                    booking.</p>
+            </div>
+
+        </article>
+
+        <aside>
+           <h1 class="aside-h1">Some of our partner hotels and relatives</h1>
+           <p class="aside-p">You can also consult them, for more information on them.</p>
+           
+           <div class="hotel-partner">
+               <div class="ohter-hotel">
+                <img src="../img/novotel-hotel.jpg" alt="hotel">
+               </div>
+               <figcaption>Novotel Cotonou Orisha </figcaption>
+               <div class="other-hotel-describe">
+                   <p>The Novotel Cotonou Orisha is located in Cotonou. It has a swimming pool
+                    outdoor pool, restaurant and free Wi-Fi.
+                     air-conditioned rooms are equipped with a flat-screen TV
+                      as well as a minibar. The private bathrooms are equipped with
+                      a bathtub or a shower. The rooms also have
+                      a seating area and satellite TV.</p>
+                   
+               </div>
+           </div>
+
+           <div class="hotel-partner">
+            <div class="ohter-hotel">
+             <img src="../img/azanai-hotel.jpg" alt="hotel">
+            </div>
+            <figcaption>Azalaï Hôtel Cotonou </figcaption>
+            <div class="other-hotel-describe">
+                <p>Located in Cotonou, 2 km from the UNDP office, the Azalaï Hotel
+                    Cotonou has an outdoor swimming pool and offers
+                     a view of the sea.
+                      free shuttle bus and restaurant.
+                       The establishment also offers a reception
+                        open 24 hours a day and a currency exchange desk.
+                </p>
+                <p>
+                </p>
+            </div>
+        </div>
+
+        <div class="hotel-partner">
+            <div class="ohter-hotel">
+             <img src="../img/royal-hotel.jpg" alt="hotel">
+            </div>
+            <figcaption>Benin Royal Hôtel</figcaption>
+            <div class="other-hotel-describe">
+                Located in Cotonou, the Benin Royal Hotel has an indoor swimming pool
+                  and a spa with wellness center. You will enjoy a connection
+                   Free Wi-Fi.Its air-conditioned rooms are all equipped with
+                   satellite television. Their private bathroom is equipped with
+                   a bathtub or a shower and a hairdryer. The rooms
+                    enjoy a city view.
+            </div>
+        </div>
+
+        <div class="hotel-partner">
+            <div class="ohter-hotel">
+             <img src="../img/nobal-hotel.jpg" alt="hotel">  
+            </div>
+            <figcaption>Nobila Airport Hotel</figcaption>
+            <div class="other-hotel-describe">
+                <p>Located in Cotonou, Nobila Airport Hotel offers a restaurant
+                    and free Wi-Fi. All accommodations
+                    include air conditioning, satellite TV
+                     and a minibar. The dining area is equipped with a refrigerator
+                      and an electric kettle. The private bathroom
+                      has a shower, bath and hairdryer.</p>
+            </div>
+        </div>
+
+        <div class="hotel-partner">
+            <div class="ohter-hotel">
+             <img src="../img/rouge-hotel.jpg" alt="hotel">
+            </div>
+            <figcaption>Hotel Maison Rouge Cotonou</figcaption>
+            <div class="other-hotel-describe">
+                <p>Located in Cotonou, Hotel Maison Rouge Cotonou offers
+                    2 outdoor pools, a restaurant and a connection
+                     Free Wi-Fi.The rooms are equipped with a minibar,
+                      air conditioning and a private bathroom with shower.
+               The Hotel Maison Rouge Cotonou provides you with a
+                airport shuttle, gardens, terraces, a shared lounge
+                 and a meeting room. On-site parking is free.</p>
+            </div>
+        </div>
+        </aside>
+
+    </main>
+    <footer>
+        <p>copyright@2021 All right reserved</p>
+        <div class="reseau-logo">
+            <span><a href=""><i class="fab fa-facebook-f"></i></a></span>
+            <span><a href=""><i class="fab fa-twitter"></i></a></span>
+            <span><a href=""><i class="fab fa-instagram"></i></a></span>
+            <span><a href=""><i class="fab fa-linkedin"></i></a></span>
+        </div>
+     </footer>
+ 
+     <script>
+
+        $('.font-bars').click(function(){
+            $('.mon-menu').toggle();
+        });
+        AOS.init();
+      </script>
+
+</body>
+
+</html>
