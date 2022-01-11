@@ -73,8 +73,9 @@ header .mon-menu {
 /*Styles for the footer*/
 
 footer {
+    position: relative;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -115,15 +116,16 @@ main {
     justify-content: center;
     top: 101px;
     position: relative;
-    height: 700px;
+    height: 650px;
     box-sizing: border-box;
     width: 100%;
+    /* border: 1px solid red; */
 }
 
 .testimony {
     position: relative;
     width: 60%;
-    height: 600px;
+    height: 550px;
     border-bottom: 2px solid blue;
     display: flex;
     flex-direction: column;
@@ -133,7 +135,7 @@ main {
 
 .les-testimony {
     width: 90%;
-    height: 500px;
+    height: 400px;
     position: relative;
     margin: 0px auto;
 }
@@ -157,14 +159,16 @@ main {
 .witness {
     position: relative;
     width: 40%;
-    height: 400px;
+    height: 550px;
+    /* border: 1px solid red; */
 }
 
 .profil-witness {
     position: relative;
     height: 400px;
     width: 60%;
-    margin: 0px auto;
+    margin: 50px auto;
+    /* border: 1px solid green; */
 }
 
 .profil-witness img {

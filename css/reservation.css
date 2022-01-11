@@ -8,7 +8,6 @@ ul li {
 }
 
 a {
-
     font-size: 25px;
     text-decoration: none;
 }
@@ -16,14 +15,14 @@ a {
 
 /* Styles for header*/
 
-header{
+header {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     background-color: darkblue;
     width: 100%;
     height: 100px;
-    align-items:center;
-    position:fixed;
+    align-items: center;
+    position: fixed;
     z-index: 1;
     box-sizing: border-box;
     margin-top: 0px;
@@ -31,9 +30,9 @@ header{
 }
 
 header .mon-menu {
-    position:relative;
+    position: relative;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     right: 0px;
     float: left;
@@ -41,38 +40,44 @@ header .mon-menu {
     box-sizing: border-box;
 }
 
-.monlogo{
-    position:relative;
-    width:25%;
+.monlogo {
+    position: relative;
+    width: 25%;
     left: 0px;
     height: 100px;
 }
+
 .monlogo img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-.mon-menu li a{
-    display:inline-block;
+
+.mon-menu li a {
+    display: inline-block;
     line-height: 100px;
     text-align: center;
     margin-right: 25px;
     color: white;
 }
-.mon-menu li a:hover{
-   border-bottom: 2px solid yellow;
-   background-color:rgba(169, 169, 169, 0.637);
-   color:yellow;
-   transition: all 1s ease;
-   font-style: italic;
+
+.mon-menu li a:hover {
+    border-bottom: 2px solid yellow;
+    background-color: rgba(169, 169, 169, 0.637);
+    color: yellow;
+    transition: all 1s ease;
+    font-style: italic;
 }
 
+
 /*Styles for the footer*/
+
 footer {
+    position: relative;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     background-color: black;
     bottom: 0px;
@@ -82,26 +87,27 @@ footer {
 footer p {
     font-size: 25px;
     font-style: italic;
-    color: white;   
+    color: white;
 }
 
-.reseau-logo span{
+.reseau-logo span {
     display: inline-block;
     margin: 0px 25px;
 }
 
-.reseau-logo span i{
+.reseau-logo span i {
     color: white;
 }
 
-.reseau-logo span i:hover{
+.reseau-logo span i:hover {
     color: yellow;
 }
-.reseau-logo{
+
+.reseau-logo {
     display: flex;
     align-items: center;
- 
 }
+
 
 /* Styles au main*/
 
@@ -110,19 +116,16 @@ main {
     position: relative;
     width: 100%;
     height: auto;
-   display: flex;
-   justify-content: center;
-  
-
+    display: flex;
+    justify-content: center;
 }
 
-article{
+article {
     margin: 0px auto;
     position: relative;
     flex: 2;
-    padding:0px 50px;
+    padding: 0px 50px;
 }
-
 
 .welcome-sms {
     text-align: center;
@@ -132,7 +135,6 @@ article{
 
 form {
     margin: 25px 0px;
-
 }
 
 .first-tarif {
@@ -169,29 +171,29 @@ form {
     height: 40px;
 }
 
-.rate{
+.rate {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position:relative;
+    position: relative;
 }
-.rate h1{
+
+.rate h1 {
     width: 100%;
     margin: 25px 0px;
     font-size: 25px;
     color: maroon;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-
 }
 
-.bord{
-    height:5px;
+.bord {
+    height: 5px;
     display: inline-block;
     width: 100%;
-    background-color:maroon;
+    background-color: maroon;
 }
 
 .rate-input input {
@@ -238,16 +240,17 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: darkblue;
     color: yellow;
 }
+
 .tarif-description {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 25px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .tarif-description p {
@@ -264,32 +267,37 @@ button:hover{
     margin: 25px 0px;
 }
 
+
 /* style for aside */
-aside{
+
+aside {
     width: 40%;
-    position: relative; 
+    position: relative;
     height: auto;
     flex: 1;
     padding: 0px 25px;
 }
-.aside-h1{
+
+.aside-h1 {
     margin-top: 50px;
     font-size: 2em;
     text-align: center;
 }
-.aside-p{
+
+.aside-p {
     font-size: 25px;
     margin: 25px 0px;
 }
-.ohter-hotel{
+
+.ohter-hotel {
     width: 100%;
     position: relative;
-    height:275px;
-    
+    height: 275px;
     margin: 0px auto;
     overflow: hidden;
 }
-.ohter-hotel img{
+
+.ohter-hotel img {
     width: 100%;
     height: 250px;
     position: relative;
@@ -298,72 +306,68 @@ aside{
     transition: 0.5s;
 }
 
-.ohter-hotel img:hover{
+.ohter-hotel img:hover {
     transform: scale(1.5);
     transition: 0.5s;
 }
 
-figcaption{
-font-size: 20px;
-text-transform: uppercase;
-font-weight: bold;
-color: darkblue;
-text-align: center;
+figcaption {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
 }
-.hotel-partner{
+
+.hotel-partner {
     margin-bottom: 100px;
     height: auto;
-    
 }
 
-.other-hotel-describe{
-   text-align: justify;
-   margin-top: 10px;
+.other-hotel-describe {
+    text-align: justify;
+    margin-top: 10px;
 }
 
-.font-bars{
+.font-bars {
     display: none;
 }
+
+
 /*Styles for media query*/
 
-@media (min-width:500px) and (max-width:768px){
-    
-    
-    .font-bars{
+@media (min-width:500px) and (max-width:768px) {
+    .font-bars {
         color: white;
         font-size: 35px;
         top: 10px;
         position: absolute;
-        right:10px;
+        right: 10px;
         cursor: pointer;
         display: block;
     }
-
-    header{
-        display:flex;
-        justify-content:space-around;
+    header {
+        display: flex;
+        justify-content: space-around;
         background-color: darkblue;
         width: 100%;
         height: 70px;
     }
-    
     header .mon-menu {
-        position:absolute;
+        position: absolute;
         display: flex;
-        width:300px;
+        width: 300px;
         flex-direction: column;
         align-items: center;
         right: 0px;
         top: 70px;
-        background-color:darkblue;
+        background-color: darkblue;
         height: 600px;
         box-sizing: border-box;
         display: none;
         border-top: 2px solid white;
     }
-    
-    
-    .monlogo{
+    .monlogo {
         position: absolute;
         left: 0px;
         top: 5px;
@@ -373,262 +377,223 @@ text-align: center;
         height: 60px;
         border-radius: 50%;
     }
-
-    .mon-menu li{
+    .mon-menu li {
         display: block;
         width: 100%;
         height: 40px;
         /* margin-bottom: 25px; */
         margin-top: 50px;
     }
-    .mon-menu li a{
-        display:block;
+    .mon-menu li a {
+        display: block;
         width: 100%;
         position: relative;
         line-height: 50px;
         text-align: center;
         border-bottom: 1px solid white;
-        margin:0px;
+        margin: 0px;
         color: white;
     }
-
-    .mon-menu li a:hover{
-        border-bottom:none;
-        color:yellow;
+    .mon-menu li a:hover {
+        border-bottom: none;
+        color: yellow;
         transition: all 1s ease;
         font-style: italic;
-     }
-   
-     main{
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         position: relative;
-     }
-
-     article{
-         padding: 0px;
-         width: 100%;
-         position: relative;
-     }
-
-     .welcome-sms{
-         font-size:2em;
-         margin-top: 30px;
-     }
-
-     .first-tarif{
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         position: relative;
-         
-     }
-
-     .first-tarif div{
-         display: block;
-         width: 100%;
-         position: relative;
-     }
-     .first-tarif input {
-        width:90%;
-        display: block;
-       position: relative;
-       margin: 0px auto;
-       margin-bottom: 25px;
     }
-
-    .first-tarif label{
-        font-size: 20px;
-        display: inline-block;
-        margin-left:25px;
-    }
-
-     .second-tarif{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            position: relative;
-            
-     }
-
-     .selection{
-        
-         position: relative;
-         width: 100%;
-     }
-
-     .selection label{
-         font-size: 20px;
-         display: inline-block;
-         margin-left: 25px;
-     }
-     .selection select{
-         display: block;
-         width: 90%;
-         margin: 0px auto;
-         margin-bottom: 25px;
-     }
-
-     .rate-input input{
-         width: 90%;
-         margin: 0px auto;
-         display: block;
-         margin-bottom: 25px;
-     }
-
-     .rate-input label{
-         text-align: center;
-     }
-
-     button{
-         width: 90%;
-         display: block;
-         margin: 0px auto;
-         margin-top: 25px;
-     }
-
-     .tarif-description{
-         padding: 25px;
-     }
-
-     aside{
-         width: 90%;
-         position: relative;
-         
-     }
-
-     .aside-h1{
-         font-size: 25px;
-     }
-     .aside-p{
-         font-size: 20px;
-         text-align: center;
-     }
-     .ohter-hotel{
-        width: 90%;
-        position: relative;
-        height:300px;  
-        margin: 0px auto;
-        overflow: hidden;
-    }
-    .ohter-hotel img{
-        width: 100%;
-        height: 300px;
-        position: relative;
-        cursor: pointer;
-        transform:none;
-        transition: 0.5s;
-    
-    }
-
-    figcaption{
-        margin-top:15px
-    }
-    
-    .ohter-hotel img:hover{
-        transform: none;
-        transition: 0.5s;
-    }
-   
-    .hotel-partner{
-        margin-bottom: 100px;
-        height: auto;
-        width: 100%;
-        position: relative;
-    }
-    
-    .other-hotel-describe{
-       text-align: justify;
-       margin-top: 10px;
-       display: block;
-       width: 90%;
-       margin: 0px auto;
-       position: relative;
-       font-size: 20px;
-       margin-top: 20px;
-    }
-}
-
-
-@media (min-width:768px) and (max-width:1200px){
-
-    article{
-       flex: 1;
-        position: relative;
-        padding: 5px;
-    }
-    .welcome-sms{
-        font-size: 30px;
-    }
-    .aside-h1{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .aside-p{
-        font-size: 20px;
-        text-align: center;
-    }
-    aside{
-        flex: 1;
-        position: relative;
-       
-    }
-
-    .first-tarif{
+    main {
         display: flex;
         flex-direction: column;
         width: 100%;
         position: relative;
-      
     }
-
-    .first-tarif div{
+    article {
+        padding: 0px;
+        width: 100%;
+        position: relative;
+    }
+    .welcome-sms {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+    .first-tarif {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .first-tarif div {
         display: block;
         width: 100%;
         position: relative;
     }
     .first-tarif input {
-       width:90%;
-       display: block;
-      position: relative;
-      margin: 0px auto;
-      margin-bottom: 25px;
-   }
-
-   .first-tarif label{
-       font-size: 20px;
-       display: inline-block;
-       margin-left:25px;
-   }
-
-   .second-tarif{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-   
+        width: 90%;
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        margin-bottom: 25px;
+    }
+    .first-tarif label {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .second-tarif {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .selection {
+        position: relative;
+        width: 100%;
+    }
+    .selection label {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .selection select {
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+        margin-bottom: 25px;
+    }
+    .rate-input input {
+        width: 90%;
+        margin: 0px auto;
+        display: block;
+        margin-bottom: 25px;
+    }
+    .rate-input label {
+        text-align: center;
+    }
+    button {
+        width: 90%;
+        display: block;
+        margin: 0px auto;
+        margin-top: 25px;
+    }
+    .tarif-description {
+        padding: 25px;
+    }
+    aside {
+        width: 90%;
+        position: relative;
+    }
+    .aside-h1 {
+        font-size: 25px;
+    }
+    .aside-p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .ohter-hotel {
+        width: 90%;
+        position: relative;
+        height: 300px;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+    .ohter-hotel img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        cursor: pointer;
+        transform: none;
+        transition: 0.5s;
+    }
+    figcaption {
+        margin-top: 15px
+    }
+    .ohter-hotel img:hover {
+        transform: none;
+        transition: 0.5s;
+    }
+    .hotel-partner {
+        margin-bottom: 100px;
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    .other-hotel-describe {
+        text-align: justify;
+        margin-top: 10px;
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        font-size: 20px;
+        margin-top: 20px;
+    }
 }
 
-.selection{
-
- position: relative;
- width: 100%;
-}
-
-.selection label{
- font-size: 20px;
- display: inline-block;
- margin-left: 25px;
-}
-.selection select{
- display: block;
- width: 90%;
- margin: 0px auto;
- margin-bottom: 25px;
-}
-.tarif-description{
-    padding: 25px;
-}
+@media (min-width:768px) and (max-width:1200px) {
+    article {
+        flex: 1;
+        position: relative;
+        padding: 5px;
+    }
+    .welcome-sms {
+        font-size: 30px;
+    }
+    .aside-h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .aside-p {
+        font-size: 20px;
+        text-align: center;
+    }
+    aside {
+        flex: 1;
+        position: relative;
+    }
+    .first-tarif {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .first-tarif div {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .first-tarif input {
+        width: 90%;
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        margin-bottom: 25px;
+    }
+    .first-tarif label {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .second-tarif {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .selection {
+        position: relative;
+        width: 100%;
+    }
+    .selection label {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .selection select {
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+        margin-bottom: 25px;
+    }
+    .tarif-description {
+        padding: 25px;
+    }
 }
