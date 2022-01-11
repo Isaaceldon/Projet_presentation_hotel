@@ -81,7 +81,7 @@ footer {
     background-color: black;
     bottom: 0px;
     margin-top: 100px;
-    position: relative;
+    position: absolute;
 }
 
 footer p {
@@ -117,7 +117,7 @@ article {
     position: relative;
     width: 100%;
     top: 101px;
-    height: 500px;
+    height: 75vh;
     box-sizing: border-box;
     background-color: aqua;
 }
