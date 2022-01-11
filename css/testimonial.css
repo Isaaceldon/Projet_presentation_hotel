@@ -8,21 +8,21 @@ ul li {
 }
 
 a {
-
     font-size: 25px;
     text-decoration: none;
 }
 
+
 /* Styles for header*/
 
-header{
+header {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     background-color: darkblue;
     width: 100%;
     height: 100px;
-    align-items:center;
-    position:fixed;
+    align-items: center;
+    position: fixed;
     z-index: 1;
     box-sizing: border-box;
     margin-top: 0px;
@@ -30,9 +30,9 @@ header{
 }
 
 header .mon-menu {
-    position:relative;
+    position: relative;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     right: 0px;
     float: left;
@@ -40,80 +40,91 @@ header .mon-menu {
     box-sizing: border-box;
 }
 
-.monlogo{
-    position:relative;
-    width:25%;
+.monlogo {
+    position: relative;
+    width: 25%;
     left: 0px;
     height: 100px;
 }
+
 .monlogo img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-.mon-menu li a{
-    display:inline-block;
+
+.mon-menu li a {
+    display: inline-block;
     line-height: 100px;
     text-align: center;
     margin-right: 25px;
     color: white;
 }
-.mon-menu li a:hover{
-   border-bottom: 2px solid yellow;
-   background-color:rgba(169, 169, 169, 0.637);
-   color:yellow;
-   transition: all 1s ease;
-   font-style: italic;
+
+.mon-menu li a:hover {
+    border-bottom: 2px solid yellow;
+    background-color: rgba(169, 169, 169, 0.637);
+    color: yellow;
+    transition: all 1s ease;
+    font-style: italic;
 }
 
+
 /*Styles for the footer*/
+
+main {
+    height: 100vh !important;
+}
+
 footer {
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     background-color: black;
-    bottom: 0px;
-    margin-top: 100px;
+    bottom: 0px !important;
+    margin-top: 100px !important;
 }
 
 footer p {
     font-size: 25px;
     font-style: italic;
-    color: white;   
+    color: white;
 }
 
-.reseau-logo span{
+.reseau-logo span {
     display: inline-block;
     margin: 0px 25px;
 }
 
-.reseau-logo span i{
+.reseau-logo span i {
     color: white;
 }
 
-.reseau-logo span i:hover{
+.reseau-logo span i:hover {
     color: yellow;
 }
-.reseau-logo{
+
+.reseau-logo {
     display: flex;
     align-items: center;
- 
 }
+
 
 /* Style for testimonial.html*/
 
-main{
+main {
     display: flex;
-    justify-content:center;
-  top: 101px;
-  position: relative;
- height: 500px;
- box-sizing: border-box;
-  width: 100%;
+    justify-content: center;
+    top: 101px;
+    position: relative;
+    height: 500px;
+    box-sizing: border-box;
+    width: 100%;
 }
-.testimony{
+
+.testimony {
     position: relative;
     width: 60%;
     height: 400px;
@@ -124,18 +135,18 @@ main{
     justify-content: center;
 }
 
-.les-testimony{
+.les-testimony {
     width: 90%;
     height: 300px;
     position: relative;
     margin: 0px auto;
 }
 
-.les-testimony p{
+.les-testimony p {
     font-size: 25px;
 }
 
-.les-testimony h1{
+.les-testimony h1 {
     font-size: 2em;
     background-color: maroon;
     color: white;
@@ -143,104 +154,102 @@ main{
     margin-bottom: 20px;
 }
 
-.les-testimony h3{
+.les-testimony h3 {
     font-size: 1.5em;
 }
-.witness{
+
+.witness {
     position: relative;
     width: 40%;
     height: 400px;
- 
 }
 
-.profil-witness{
+.profil-witness {
     position: relative;
     height: 400px;
     width: 60%;
-  
     margin: 0px auto;
 }
 
-.profil-witness img{
+.profil-witness img {
     width: 100%;
     height: 100%;
     position: relative;
     border-radius: 50%;
 }
 
-
-.sous{
+.sous {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    bottom:15px;
+    bottom: 15px;
 }
 
-.sous li{
+.sous li {
     list-style-type: none;
     display: inline-block;
     cursor: pointer;
     margin: 0px 10px;
 }
 
-.sous li img{
+.sous li img {
     width: 65px;
     height: 65px;
     border-radius: 50%;
     transition: 0.5s;
 }
-.sous li img:hover{
+
+.sous li img:hover {
     transform: translateY(-10px);
 }
-.les-testimony1,.les-testimony2,.les-testimony3, .les-testimony4{
+
+.les-testimony1,
+.les-testimony2,
+.les-testimony3,
+.les-testimony4 {
     display: none;
 }
 
-.font-bars{
+.font-bars {
     display: none;
 }
+
 
 /*Styles for media query*/
 
-@media (min-width:500px) and (max-width:768px){
-    
-    
-    .font-bars{
+@media (min-width:500px) and (max-width:768px) {
+    .font-bars {
         color: white;
         font-size: 35px;
         top: 10px;
         position: absolute;
-        right:10px;
+        right: 10px;
         cursor: pointer;
         display: block;
     }
-
-    header{
-        display:flex;
-        justify-content:space-around;
+    header {
+        display: flex;
+        justify-content: space-around;
         background-color: darkblue;
         width: 100%;
         height: 70px;
     }
-    
     header .mon-menu {
-        position:absolute;
+        position: absolute;
         display: flex;
-        width:300px;
+        width: 300px;
         flex-direction: column;
         align-items: center;
         right: 0px;
         top: 70px;
-        background-color:darkblue;
+        background-color: darkblue;
         height: 600px;
         box-sizing: border-box;
         display: none;
         border-top: 2px solid white;
     }
-    
-    
-    .monlogo{
+    .monlogo {
         position: absolute;
         left: 0px;
         top: 5px;
@@ -250,87 +259,79 @@ main{
         height: 60px;
         border-radius: 50%;
     }
-
-    .mon-menu li{
+    .mon-menu li {
         display: block;
         width: 100%;
         height: 40px;
         /* margin-bottom: 25px; */
         margin-top: 50px;
     }
-    .mon-menu li a{
-        display:block;
+    .mon-menu li a {
+        display: block;
         width: 100%;
         position: relative;
         line-height: 50px;
         text-align: center;
         border-bottom: 1px solid white;
-        margin:0px;
+        margin: 0px;
         color: white;
     }
-
-    .mon-menu li a:hover{
-        border-bottom:none;
-        color:yellow;
+    .mon-menu li a:hover {
+        border-bottom: none;
+        color: yellow;
         transition: all 1s ease;
         font-style: italic;
-     }
-    
-     .sous{
-         text-align: center;
-         margin: 0px solid;
-         position: relative;
-     }
-    .sous li img{
+    }
+    .sous {
+        text-align: center;
+        margin: 0px solid;
+        position: relative;
+    }
+    .sous li img {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         transition: 0.5s;
     }
-
-    main{
+    main {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         flex-direction: column-reverse;
         top: 101px;
         position: relative;
-        height:auto;
+        height: auto;
         box-sizing: border-box;
         width: 100%;
     }
-    .testimony{
+    .testimony {
         position: relative;
         width: 100%;
-        height:auto;
+        height: auto;
         justify-content: center;
         margin-top: 25px;
         display: block;
         margin-bottom: 25px;
         border-bottom: none;
     }
-    
-    .les-testimony{
+    .les-testimony {
         width: 100%;
         height: auto;
         position: relative;
         margin: 0px auto;
         text-align: center;
     }
-    
-    .witness{
+    .witness {
         position: relative;
         width: 100%;
         height: 300px;
     }
-    
-    .profil-witness{
+    .profil-witness {
         position: relative;
         height: 300px;
         width: 60%;
         margin: 0px auto;
     }
-    
-    .profil-witness img{
+    .profil-witness img {
         width: 100%;
         height: 100%;
         position: relative;
@@ -338,30 +339,23 @@ main{
     }
 }
 
-@media (min-width:768px) and (max-width:1024px){
-    
-    .witness{
+@media (min-width:768px) and (max-width:1024px) {
+    .witness {
         position: relative;
         width: 40%;
         height: 400px;
-     
     }
-    
-    .profil-witness{
+    .profil-witness {
         position: relative;
         height: 400px;
         width: 100%;
         margin: 0px auto;
         border: 1px solid red;
     }
-    
-    .profil-witness img{
+    .profil-witness img {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 50%;
     }
 }
-
-
-
