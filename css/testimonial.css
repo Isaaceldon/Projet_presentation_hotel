@@ -72,10 +72,6 @@ header .mon-menu {
 
 /*Styles for the footer*/
 
-main {
-    height: 100vh !important;
-}
-
 footer {
     width: 100%;
     height: 100px;
@@ -119,7 +115,7 @@ main {
     justify-content: center;
     top: 101px;
     position: relative;
-    height: 500px;
+    height: 600px;
     box-sizing: border-box;
     width: 100%;
 }
